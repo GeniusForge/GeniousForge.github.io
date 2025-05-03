@@ -55,4 +55,3 @@ Twitter: [@GeniusForge](https://twitter.com/geniusforge)
 ---
 
 > ⚡ Built with passion by the GeniusForge open-source community.
-```
