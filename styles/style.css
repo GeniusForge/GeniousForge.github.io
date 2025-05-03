@@ -77,4 +77,47 @@
     text-align: center;
     padding: 20px 0;
   }
+  .cta-button {
+    background: #ffd700;
+    color: #111;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .cta-button:hover {
+    background: #ffcc00;
+  }
+  
+  .social-icons {
+    margin-top: 1rem;
+  }
+  
+  .social-icons img {
+    width: 32px;
+    margin: 0 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .projects li {
+      margin-bottom: 25px;
+    }
+  
+    .logo {
+      max-width: 80px;
+    }
+  }
   
