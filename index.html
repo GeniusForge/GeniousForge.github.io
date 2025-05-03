@@ -1,66 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="GeniusForge – Building open-source tools for developers." />
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="icon" href="assets/logo.png" />
   <title>GeniusForge</title>
 </head>
 <body>
-  <header>
-    <div class="container">
+  <div class="theme-toggle">
+    <button id="toggleMode">🌓</button>
+  </div>
+
+  <header class="hero">
+    <div class="overlay glass">
       <img src="assets/logo.png" alt="GeniusForge Logo" class="logo" />
-      <h1>GeniusForge</h1>
+      <h1>Welcome to GeniusForge</h1>
       <p>Your forge for open-source innovation.</p>
-      <a href="#projects" class="cta-button">Explore Projects</a>
+      <a href="#projects" class="btn cta">Explore Projects</a>
     </div>
   </header>
 
-  <nav>
+  <nav class="nav glass">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#features">Features</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <main class="container">
-    <section id="about">
-      <h2>About GeniusForge</h2>
-      <p>We craft cutting-edge open-source tools and platforms for developers worldwide. From automation to developer experience, our mission is to empower creators and problem solvers.</p>
+    <section id="about" class="glass section">
+      <h2>About Us</h2>
+      <p>We craft cutting-edge open-source tools and platforms for developers worldwide.</p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul class="projects">
-        <li>
-          <h3>Good First Issue</h3>
-          <p>A CLI tool to help beginners find issues to contribute to in open source.</p>
-          <a href="https://github.com/geniusforge/good-first-issue" target="_blank">View on GitHub</a>
-        </li>
-        <li>
-          <h3>DevDashboard (Coming Soon)</h3>
-          <p>A dashboard to track your GitHub stats, pull requests, and contributions.</p>
-        </li>
-      </ul>
+    <section id="features" class="features grid">
+      <div class="card glass hover-glow">
+        <h3>Responsive Design</h3>
+        <p>Looks perfect on any device.</p>
+      </div>
+      <div class="card glass hover-glow">
+        <h3>Advanced Animations</h3>
+        <p>Smooth, eye-catching transitions.</p>
+      </div>
+      <div class="card glass hover-glow">
+        <h3>Trending Features</h3>
+        <p>Stay ahead with the latest tech.</p>
+      </div>
+      <div class="card glass hover-glow">
+        <h3>Dark Mode</h3>
+        <p>Easy on the eyes, day or night.</p>
+      </div>
     </section>
 
-    <section id="contact">
+    <section id="projects" class="projects grid">
+      <!-- Repeat for each project -->
+      <div class="card glass hover-glow">
+        <h3>Good First Issue</h3>
+        <p>CLI to find beginner-friendly issues.</p>
+        <a href="https://github.com/geniusforge/good-first-issue" target="_blank" class="btn">View Repo</a>
+      </div>
+      <div class="card glass hover-glow">
+        <h3>DevDashboard</h3>
+        <p>Track GitHub stats and contributions.</p>
+        <span class="badge">Coming Soon</span>
+      </div>
+    </section>
+
+    <section id="contact" class="glass section">
       <h2>Contact Us</h2>
-      <p>Want to collaborate or contribute? Reach out via email or socials.</p>
-      <p><a href="mailto:hello@geniusforge.dev">hello@geniusforge.dev</a></p>
+      <p>Reach out via email or social media.</p>
+      <a href="mailto:hello@geniusforge.dev" class="btn">Email Us</a>
       <div class="social-icons">
-        <a href="https://github.com/geniusforge" target="_blank"><img src="assets/social-icons/github.png" alt="GitHub" /></a>
+        <a href="https://github.com/geniusforge" target="_blank"><img src="assets/social-icons/github.svg" alt="GitHub" /></a>
         <a href="https://twitter.com/geniusforge" target="_blank"><img src="assets/social-icons/twitter.svg" alt="Twitter" /></a>
         <a href="https://linkedin.com" target="_blank"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn" /></a>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer glass">
     <p>© 2025 GeniusForge. Built with ❤️ by open-source contributors.</p>
   </footer>
+
+  <script>
+    const btn = document.getElementById('toggleMode');
+    btn.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', theme === 'light' ? 'dark' : 'light');
+    });
+  </script>
 </body>
 </html>
