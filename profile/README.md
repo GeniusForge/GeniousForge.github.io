@@ -37,7 +37,7 @@ This repo contains the static website built with **HTML + CSS**.
 
 ### 🖥️ Live Site
 
-👉 Visit: [https://geniusforge.github.io](https://geniusforge.github.io)
+👉 Visit: [Geniusforge](https://geniusforge.github.io/.github/)
 
 ## 🤝 Contributing
 
