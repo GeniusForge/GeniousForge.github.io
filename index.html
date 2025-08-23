@@ -3,82 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeniusForge </title>
+    <title>NexusDev | Modern Web Development Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
 </head>
 <body>
-    <header class="gf-header">
-        <img src="Assets/logo.png" alt="GeniusForge" class="gf-logo">
-        <h1>GeniusForge Agency</h1>
-        <p>Expert Web Development for Freelancers & Businesses</p>
-        <div class="gf-terminal">
-            <span class="gf-command">$ forge your next website</span>
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">NexusDev</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
         </div>
-    </header>
+        <button class="cta-button">Get Started</button>
+    </nav>
 
-    <main>
-        <section class="gf-services">
-            <h2>Our Services</h2>
-            <div class="gf-service-list">
-                <div class="gf-service-card">
-                    <h3>Custom Website Development</h3>
-                    <p>Modern, responsive websites tailored to your brand.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>We Create Digital Experiences That Drive Growth</h1>
+        <p>NexusDev is a modern web development agency specializing in creating high-performance websites and applications that convert visitors into customers.</p>
+        <button class="cta-button">Explore Our Work</button>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="cards-container">
+            <div class="card floating">
+                <div class="card-icon">
+                    <i class="fas fa-laptop-code"></i>
                 </div>
-                <div class="gf-service-card">
-                    <h3>Web App Solutions</h3>
-                    <p>From MVPs to full-scale platforms, we build robust web apps.</p>
+                <h3>Web Development</h3>
+                <p>Custom websites and web applications built with the latest technologies for optimal performance and user experience.</p>
+                <a href="#">Learn More →</a>
+            </div>
+            <div class="card floating" style="animation-delay: 0.5s;">
+                <div class="card-icon">
+                    <i class="fas fa-mobile-alt"></i>
                 </div>
-                <div class="gf-service-card">
-                    <h3>Maintenance & Support</h3>
-                    <p>Ongoing updates, bug fixes, and performance optimization.</p>
+                <h3>Mobile Apps</h3>
+                <p>Cross-platform mobile applications that provide seamless experiences across all devices and platforms.</p>
+                <a href="#">Learn More →</a>
+            </div>
+            <div class="card floating" style="animation-delay: 1s;">
+                <div class="card-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>User-centered design approaches that create intuitive, engaging, and conversion-focused digital experiences.</p>
+                <a href="#">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="E-commerce Website">
+                <div class="portfolio-overlay">
+                    <h3>E-commerce Platform</h3>
+                    <p>Modern online store with seamless checkout experience</p>
                 </div>
             </div>
-        </section>
-
-        <section class="gf-portfolio">
-            <h2>Portfolio</h2>
-            <div class="gf-project-list">
-                <div class="gf-project-card">
-                    <img src="Assets/project1.png" alt="Project 1">
-                    <h4>Startup Landing Page</h4>
-                </div>
-                <div class="gf-project-card">
-                    <img src="Assets/project2.png" alt="Project 2">
-                    <h4>E-commerce Platform</h4>
-                </div>
-                <!-- Add more projects as needed -->
-            </div>
-        </section>
-
-        <section class="gf-contact">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Project Details" required></textarea>
-                <button type="submit">Send Inquiry</button>
-            </form>
-        </section>
-
-        <section class="gf-opensource">
-            <h2>Open Source Forge</h2>
-            <div class="gf-contributor">
-                <img src="user.png" alt="Contributor" style="width: 40px; border-radius: 50%;">
-                <div>
-                    <h4>Recent Contribution</h4>
-                    <p>Improved CLI documentation</p>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Finance Dashboard">
+                <div class="portfolio-overlay">
+                    <h3>Finance Dashboard</h3>
+                    <p>Interactive data visualization for financial analytics</p>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Travel App">
+                <div class="portfolio-overlay">
+                    <h3>Travel App</h3>
+                    <p>Mobile application for booking unique travel experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
-    <footer class="gf-footer">
-        <p>&copy; 2023 GeniusForge. All rights reserved.</p>
-        <div class="gf-socials">
-            <a href="#"><img src="Assets/github.png" alt="GitHub"></a>
-            <a href="#"><img src="Assets/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="Assets/linkedin.png" alt="LinkedIn"></a>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2 class="section-title">Client Testimonials</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial">
+                <p class="testimonial-text">"NexusDev transformed our online presence. The new website has increased our conversion rate by 40% and the user feedback has been incredible."</p>
+                <div class="testimonial-client">
+                    <div class="client-avatar">JD</div>
+                    <div>
+                        <h4>John Doe</h4>
+                        <p>CEO, TechStart Inc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"The team at NexusDev understood our vision immediately. They delivered a stunning mobile app that our users love and engagement has skyrocketed."</p>
+                <div class="testimonial-client">
+                    <div class="client-avatar">SA</div>
+                    <div>
+                        <h4>Sarah Anderson</h4>
+                        <p>Product Manager, InnovateCo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"Working with NexusDev was seamless. Their attention to detail and technical expertise resulted in a website that perfectly represents our brand."</p>
+                <div class="testimonial-client">
+                    <div class="client-avatar">MJ</div>
+                    <div>
+                        <h4>Michael Johnson</h4>
+                        <p>Marketing Director, BrandWorks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>NexusDev</h3>
+                <p>Creating digital experiences that drive growth and engagement for brands worldwide.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile App Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">E-commerce Solutions</a></li>
+                    <li><a href="#">Digital Strategy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Design Street, Creative City</li>
+                    <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+                    <li><i class="fas fa-envelope"></i> hello@nexusdev.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 NexusDev. All rights reserved.</p>
         </div>
     </footer>
 </body>
